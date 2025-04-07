@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export const config = {
-  matcher: '/((?!csp|_next|static).*)',
+  matcher: '/((?!csp|_next|static|favicon).*)',
 };
 
 const middleware = (): Promise<NextResponse> => {
